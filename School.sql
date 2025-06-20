@@ -21,3 +21,4 @@ values
 
 select * from student;
 select name, city from student;
+select distinct city from student;
