@@ -1,13 +1,13 @@
 create database college; 
+create database if not exists college;
 use college;
-
-create table student (
-	id int primary key,
-    name varchar(50),
-    age int not null
+create table student(
+	rollno int primary key,
+    name varchar (50)
 );
-
-insert into student values (1,"Yousuf",25);
-insert into student values (2,"Yousha",22);
-
 select * from student;
+
+insert into student( name, rollno)
+values("Yousuf", 25),
+("Yusha", 23);
+insert into student values(34,"Limon");
