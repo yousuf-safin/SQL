@@ -22,3 +22,14 @@ values
 select * from student;
 select name, city from student;
 select distinct city from student;
+
+select * from student where marks>80 and city ="Dhaka";
+select * from student where marks+15>100;
+
+select * from student where marks between 80 and 90;
+
+select * from student where city in ("Dhaka", "Ashulia");
+select * from student where city  not in ("Dhaka", "Ashulia");
+select * from student limit 3;
+select * from student order by marks DESC
+limit 3;
